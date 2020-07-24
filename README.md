@@ -15,7 +15,7 @@ Convergent CDA Algorithm,
 Biderectional CDA Algorithm,
 Greedy Best First Search,
 Breadth First Search,
-Depth First Search, 
+Depth First Search
 
  Some of the Features of our Visualizer are as follows:
  **Additional Station Node,**
