@@ -8,20 +8,20 @@ We are interested in developing various Interactive and Dynamic websites. We are
  Path Finding Visualizer assists in visualizing the different algorithms and uses them to find the shortest path between Source node and Destination node by avoiding various obstacles.
  
 The various algorithms that are supported are-
-**1. Dijkstra’s Algorithm**
-**2. A* Search**
-**3. CDA(Combination of Dijkstra’s and A*) Algorithm**
-**4. Convergent CDA Algorithm**
-**5. Biderectional CDA Algorithm
-**6. Greedy Best First Search**
-**7. Breadth First Search**
-**8. Depth First Search** 
+**Dijkstra’s Algorithm,**
+**A* Search,**
+**CDA(Combination of Dijkstra’s and A*) Algorithm,**
+**Convergent CDA Algorithm,**
+**Biderectional CDA Algorithm,**
+**Greedy Best First Search,**
+**Breadth First Search,**
+**Depth First Search,** 
 
  Some of the Features of our Visualizer are as follows:
- **1. Additional Station Node**
- **2. Crater Node**
- **3. Mazes and Patterns**
- **4. Speed**
+ **Additional Station Node,**
+ **Crater Node,**
+ **Mazes and Patterns,**
+ **Speed**
  
  ## Graphical Visualizer
  Graphical visualizer lets you find the shortest path between Source and Destination node. Algorithm used in this visualizer to find the shortest path between two nodes is Dijkstra’s algorithm. The visualizer generates random graphs and the user can choose a Source and Destination node, placing it as desired. Upon clicking the Begin button the shortest path between the nodes is displayed. After the shortest path exhibition, Reset button is available for resetting the graph. Along with the features above a New Graph button feature is provided for generating new and random graphs.
