@@ -1,0 +1,198 @@
+<!DOCTYPE html> 
+<html>
+<head>
+    <title>Get Set Launch</title>
+    <link rel="stylesheet" href="index.css">    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body onload="checkCookie()">
+<div class="topnav">
+        <div class="topnav-right">
+          <a href="Help.html">Help</a>
+          <a href="About_us.html">About Us</a>
+        </div>
+    </div>
+    <video autoplay loop class="video_background" muted plays-inline><source src="Space - 2381.mp4" type="video/mp4"></video>
+    <div class="welcome-msg">
+        <h1>LET'S COLONIZE MARS</h1>
+        <h2>Get Ready...</h2>    
+    </div>
+    <div id="myModal" class="modal">
+    <div class="modal-content">
+          <span class="close">&times;</span>
+          <p>Enter the Velocity between 14Km/Sec - 19Km/Sec with which your Rover has to be Launched from the Earth's Surface to reach Mars...</p>
+          <form action=""><input type="number" placeholder="Enter Launch Velocity" id="userInput"></form>
+          <button onclick="launch()">Submit</button>
+    </div>
+    </div>
+      
+<script>
+      var modal = document.getElementById("myModal");
+      var btn = document.getElementById("myBtn");
+      var span = document.getElementsByClassName("close")[0];
+      btn.onclick = function(){
+      modal.style.display = "block";
+      }
+      span.onclick = function(){
+      modal.style.display = "none";
+      }
+      window.onclick = function(event){
+      if(event.target == modal){
+          modal.style.display = "none";
+        }
+      }
+      function launch(){
+        var input=document.getElementById("userInput").value;
+        if( input>13 && input<20){
+          window.open("nindex_1.html")
+        }
+          else{
+          window.open("Escape_page.html")
+        }
+      }
+
+</script>
+     <div class="slideshow-container">
+     <div class="mySlides">
+        <h1>COUNTDOWN BEGINS 1..2..3..</h1>
+        <h2>LETS START THE MISSION</h2>
+        <p>Set your Rover to navigate on the surface of Mars to reach your Final Destination via shortest path avoiding Obstacles.</p>
+     </div>
+     <div class="mySlides">
+        <p><b>PATHFINDING VISUALIZER</b><br><br>Pathfinding Visualizer allows the Rover to find and visualize the Shortest Path among all the paths between Source node and Destination node in the presence of various Obstacles after the Rover has reached Mars. The visualizer also enables us to add <b>Crater node</b>, <b>Additional Station Node</b>, <b>a Maze or a Pattern</b> in the grid from a variety of Mazes and Patterns and also allows us to choose the <b>speed of the Rover</b>. Pathfinding Visualizer also has the feature of <b>Graphical Visualization</b> which has been explained in the next section.</p>
+    </div>
+    <div class="mySlides">
+        <p><b>GRAPHICAL VISUALIZER</b><br><br><b>Graphical Visualizer</b> allows your Rover to choose a Source and Destination node in the selected Graph and the Shortest path between the two is depicted through the Edges, also showing visited and unvisited nodes. You can Reset the Graph by clicking on <b>Reset</b> button and again choose Source and Destination Node on the same Graph and clicking on <b>Begin</b> button will find the Shortest Path. New Graphs can be obtained by clicking on <b>New Graph</b> button.
+</p>
+    </div>
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <div class="dot-container">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+  </div> 
+  
+<script>
+      var slideIndex = 1;
+      showSlides(slideIndex);
+      function plusSlides(n) {
+      showSlides(slideIndex += n);
+}
+      function currentSlide(n) {
+          showSlides(slideIndex = n);
+         }
+      function showSlides(n) {
+           var i;
+           var slides = document.getElementsByClassName("mySlides");
+           var dots = document.getElementsByClassName("dot");
+           if (n > slides.length) {slideIndex = 1}
+           if (n < 1) {slideIndex = slides.length}
+           for (i = 0; i < slides.length; i++) {
+           slides[i].style.display = "none";
+    }
+    
+        for (i = 0; i < dots.length; i++) {
+           dots[i].className = dots[i].className.replace(" active", "");
+           }
+  
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active";
+        }
+    
+  </script>
+      <button id="myBtn" class="button">LETS GO!</button> 
+      <div id="myModal" class="modal">
+      <div class="modal-content">
+      <span class="close">&times;</span>
+      <p>Enter the Velocity between 14Km/Sec - 19Km/Sec with which your Rover has to be Launched from the Earth's Surface to reach Mars...</p>
+      <form action=""><input type="number" placeholder="Enter Launch Velocity" id="userInput"></form><br>
+      <button onclick="launch()">Submit</button>
+    </div>
+  </div>
+  
+  <script>
+      var modal = document.getElementById("myModal");
+      var btn = document.getElementById("myBtn");
+      var span = document.getElementsByClassName("close")[0];
+      btn.onclick = function() {
+      modal.style.display = "block";
+  }
+  
+      span.onclick = function() {
+      modal.style.display = "none";
+  }
+  
+      window.onclick = function(event) {
+         if (event.target == modal) {
+               modal.style.display = "none";
+              }
+         }
+      function launch(){
+       var input=document.getElementById("userInput").value;
+       if( input>13 && input<20){
+          window.open("nindex_1.html")
+        }
+          else{
+            window.open("Escape_page.html")
+         }
+  }
+
+  </script>
+     
+   <script>
+function setCookie(cname,cvalue,exdays) {
+  var d = new Date();
+  d.setTime(d.getTime() + (exdays*24*60*60*1000));
+  var expires = "expires=" + d.toGMTString();
+  document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+}
+
+function getCookie(cname) {
+  var name = cname + "=";
+  var decodedCookie = decodeURIComponent(document.cookie);
+  var ca = decodedCookie.split(';');
+  for(var i = 0; i < ca.length; i++) {
+    var c = ca[i];
+    while (c.charAt(0) == ' ') {
+      c = c.substring(1);
+    }
+    if (c.indexOf(name) == 0) {
+      return c.substring(name.length, c.length);
+    }
+  }
+  return "";
+}
+
+function checkCookie() {
+  var user=getCookie("username");
+  if (user != "") {
+    alert("Welcome Again " + user);
+  } else {
+     user = prompt("Please enter your name:","");
+     if (user != "" && user != null) {
+       setCookie("username", user, 30);
+     }
+  }
+}
+</script>
+     
+      <div class="fun1">
+      <h3 >Contact Us: technocratsmars@gmail.com
+      <a href="https://github.com/https-github-com-sakshipatel-515/Technocrats_mars_rover"><img src="github.png" width=50px height=50px></a>
+      </h3>
+      </div>
+
+<script type="text/javascript">
+      (function(d, m){
+        var kommunicateSettings = {"appId":"3daec4ec34d80672abb713f3188650345","popupWidget":true,"automaticChatOpenOnNavigation":true};
+        var s = document.createElement("script"); s.type = "text/javascript"; s.async = true;
+        s.src = "https://widget.kommunicate.io/v2/kommunicate.app";
+        var h = document.getElementsByTagName("head")[0]; h.appendChild(s);
+        window.kommunicate = m; m._globals = kommunicateSettings;
+      })(document, window.kommunicate || {});
+  </script>
+
+</body>
+</html>

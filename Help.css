@@ -1,0 +1,10 @@
+body{
+    background-color: floralwhite;
+}
+video{
+    position: fixed;
+}
+p{
+    color: 10px black;
+    font-weight: bold;
+}
