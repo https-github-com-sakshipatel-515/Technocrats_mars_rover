@@ -10,7 +10,7 @@ We are interested in developing various Interactive and Dynamic websites. We are
 The various algorithms that are supported are-
 **Dijkstra’s Algorithm,**
 **A* Search,**
-**CDA(Combination of Dijkstra’s and A*) Algorithm,**
+**CDA(Combination of Dijkstra’s and A*)Algorithm,**
 **Convergent CDA Algorithm,**
 **Biderectional CDA Algorithm,**
 **Greedy Best First Search,**
