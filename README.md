@@ -24,7 +24,7 @@ Depth First Search
  **Speed**
  
  ## Graphical Visualizer
- Graphical visualizer lets you find the shortest path between Source and Destination node. Algorithm used in this visualizer to find the shortest path between two nodes is Dijkstra’s algorithm. The visualizer generates random graphs and the user can choose a Source and Destination node, placing it as desired. Upon clicking the Begin button the shortest path between the nodes is displayed. After the shortest path exhibition, Reset button is available for resetting the graph. Along with the features above a New Graph button feature is provided for generating new and random graphs.
+ Graphical visualizer lets you find the shortest path between Source and Destination node. Algorithm used in this visualizer to find the shortest path between two nodes is Dijkstra’s algorithm. The visualizer generates random graphs and the user can choose a Source and Destination node, placing it as desired. Upon clicking the Begin button the shortest path between the nodes is displayed. After the shortest path exhibition, Reset button is available for resetting the graph. Along with the features above, a New Graph button feature is provided for generating new and random graphs.
 
 ###### Visit our Website:  https://https-github-com-sakshipatel-515.github.io/Technocrats_mars_rover/
 
