@@ -7,12 +7,12 @@ We are interested in developing various Interactive and Dynamic websites. We are
 ## Path Finding Visualizer
  Path Finding Visualizer assists in visualizing the different algorithms and uses them to find the shortest path between Source node and Destination node by avoiding various obstacles.
  
-The various algorithms that are supported are-
+The various algorithms that are supported are:
 Dijkstra’s Algorithm,
 A* Search,
 CDA(Combination of Dijkstra’s and A*)Algorithm,
 Convergent CDA Algorithm,
-Biderectional CDA Algorithm,
+Bidirectional CDA Algorithm,
 Greedy Best First Search,
 Breadth First Search,
 Depth First Search
